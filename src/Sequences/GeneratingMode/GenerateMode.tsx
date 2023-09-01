@@ -1,6 +1,6 @@
 import { AbsoluteFill } from "remotion";
 import PromptingText from "./PromptingText";
-import "../../styles/basis.css";
+import "../../styles/basis.scss";
 
 const GeneratingMode: React.FC = () => {
 	const promptingStyles: React.CSSProperties = {
