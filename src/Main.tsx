@@ -76,9 +76,9 @@ const Main: React.FC = () => {
 					<></>
 				</Series.Sequence>
 
-				{/* Slide d'information */}
+				{/* Slide d'information - 3s */}
 				<Series.Sequence 
-					durationInFrames={time`5s`}
+					durationInFrames={time`3s`}
 					name="Informations"
 				>
 					<InfoAsso />
