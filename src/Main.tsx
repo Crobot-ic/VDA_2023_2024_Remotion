@@ -76,6 +76,13 @@ const Main: React.FC = () => {
 					<></>
 				</Series.Sequence>
 
+				<Series.Sequence
+					durationInFrames={time`3s`}
+					name="Des souvenirs"
+				>
+					<></>
+				</Series.Sequence>
+
 				{/* Slide d'information - 3s */}
 				<Series.Sequence 
 					durationInFrames={time`3s`}

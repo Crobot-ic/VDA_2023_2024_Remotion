@@ -31,7 +31,7 @@ const InfoAsso = () => {
         transform: "translateX(-50%)",
         bottom: 100
     }, imgStyles: React.CSSProperties = {
-        width: "40vw"
+        width: "400px"
     };
 
     return (
