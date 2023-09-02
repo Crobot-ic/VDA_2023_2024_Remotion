@@ -20,7 +20,7 @@ const Main: React.FC = () => {
 
 				{/* Accroche */}
 				<Series.Sequence 
-					durationInFrames={time`13s`}
+					durationInFrames={time`14s`}
 					name="Accroche"
 				>
 					<Accroche />

@@ -14,7 +14,7 @@ const GeneratingMode: React.FC = () => {
 
 	return (
 		<AbsoluteFill style={{ backgroundColor: "#0e2a47" }}>
-			<div className="flex-center">
+			<div className="full-screen flex-center">
 				<div className="pos-abs top-position">
 					<Img src={logo} className="little-img"/>
 				</div>

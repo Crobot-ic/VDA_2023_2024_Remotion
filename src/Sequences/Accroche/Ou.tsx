@@ -17,7 +17,7 @@ const Ou: React.FC = () => {
 
 	return (
 		<AbsoluteFill style={{ backgroundColor: "#0e2a47" }}>
-			<div className="flex-center">
+			<div className="full-screen flex-center">
 				<p style={styles}>Ou ?</p>
 			</div>
 		</AbsoluteFill>

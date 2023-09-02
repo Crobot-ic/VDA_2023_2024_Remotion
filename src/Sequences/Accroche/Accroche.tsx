@@ -1,9 +1,7 @@
 import { Series } from "remotion";
 import { useTime } from "remotion-time";
 import Ou from "./Ou";
-import BubbleTea from "./BubbleTea";
-import HarryPotter from "./HarryPotter";
-import WeAreWaitingYou from "./WeAreWaitingYou";
+import VideoPart from "./VideoPart";
 
 const Accroche: React.FC = () => {
     const time = useTime();
@@ -15,7 +13,10 @@ const Accroche: React.FC = () => {
                     durationInFrames={time`5s`}
                     name="Accroche - Bubble Tea"
                 >
-                    <BubbleTea />
+                    <VideoPart 
+                        text="Envie de conquérir ton foie ? 🧋" 
+                        videoFile="BubbleTea.mp4"
+                    />
                 </Series.Sequence>
                 
                 <Series.Sequence 
@@ -29,14 +30,17 @@ const Accroche: React.FC = () => {
                     durationInFrames={time`5s`}
                     name="Accroche - Harry Potter Chessboard"
                 >
-                    <HarryPotter />
+                    <VideoPart 
+                        text="De conquérir tes sagas préférées ? 😍" 
+                        videoFile="BubbleTea.mp4"
+                    />
                 </Series.Sequence>
 
                 <Series.Sequence 
-                    durationInFrames={time`2s`}
+                    durationInFrames={time`3s`}
                     name="Crobo t'attend !"
                 >
-                    <WeAreWaitingYou />
+                    <VideoPart videoFile="Wait.mp4" />
                 </Series.Sequence>
             </Series>
         </>
