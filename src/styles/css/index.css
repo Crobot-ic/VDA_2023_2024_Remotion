@@ -7,4 +7,22 @@
   justify-content: center;
 }
 
+.pos-abs {
+  position: absolute;
+}
+
+.top-position {
+  top: 30px;
+}
+
+.bottom-position {
+  bottom: 30px;
+}
+
+.little-img {
+  width: 350px;
+  height: 350px;
+  object-fit: contain;
+}
+
 /*# sourceMappingURL=index.css.map */
