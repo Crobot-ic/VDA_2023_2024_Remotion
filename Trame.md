@@ -1,6 +1,6 @@
 File for describing the trame of the video :
 
-[ ] 5s - Annonce de la manière dont a été créé la vidéo
+~~[ ] 5s - Annonce de la manière dont a été créé la vidéo~~
 [ ] 10s - Accroche dans le genre de l'année dernière (à refaire car beaucoup trop longue + pas belle)
 [ ] 5s - Crobot'ic c'est : - + roulette bougeante avec titre des différents trucs (des projets, des formations, des événements)
 [ ] 20s - Présentation des projets pour l'année à venir

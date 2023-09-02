@@ -20,7 +20,7 @@ const GeneratingMode: React.FC = () => {
 				</div>
 
 				<PromptingText 
-					text=">> Toutes les frames de cette vidéo ont été générées avec du code"
+					text=">> Cette vidéo a entièrement été générée avec du code 😉"
 					duration="1.2s"
 					style={promptingStyles}
 				/>

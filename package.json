@@ -4,7 +4,7 @@
 	"description": "Vidéo de présentation 2024 de l'association One Panthéon",
 	"scripts": {
 	  "start": "remotion studio",
-	  "build": "remotion render HelloWorld out/video.mp4",
+	  "build": "remotion render VideoAsso out/video.mp4",
 	  "upgrade": "remotion upgrade",
 	  "test": "eslint src --ext ts,tsx,js,jsx && tsc", 
 		"sass": "sass -w ./src/styles/scss/index.scss ./src/styles/css/index.css"

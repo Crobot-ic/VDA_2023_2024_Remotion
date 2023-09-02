@@ -2,6 +2,7 @@
 import { Series } from "remotion";
 import { useTime } from "remotion-time";
 import GeneratingMode from "./Sequences/GeneratingMode/GenerateMode";
+import Accroche from "./Sequences/Accroche/Accroche";
 
 const Main: React.FC = () => {
 	const time = useTime();
@@ -11,7 +12,7 @@ const Main: React.FC = () => {
 			<Series>
 				{/* Créé avec du code */}
 				<Series.Sequence 
-					durationInFrames={time`5s`}
+					durationInFrames={time`4s`}
 					name="Créé avec du code"
 				>	
 					<GeneratingMode />
@@ -19,10 +20,10 @@ const Main: React.FC = () => {
 
 				{/* Accroche */}
 				<Series.Sequence 
-					durationInFrames={time`10s`}
+					durationInFrames={time`13s`}
 					name="Accroche"
 				>
-					<></>
+					<Accroche />
 				</Series.Sequence>
 
 				{/* Roulette - Crobot'ic c'est */}
