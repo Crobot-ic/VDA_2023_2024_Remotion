@@ -3,11 +3,12 @@
 	"version": "1.0.0",
 	"description": "Vidéo de présentation 2024 de l'association One Panthéon",
 	"scripts": {
-	  "start": "remotion studio",
-	  "build": "remotion render VideoAsso out/video.mp4",
-	  "upgrade": "remotion upgrade",
-	  "test": "eslint src --ext ts,tsx,js,jsx && tsc", 
-		"sass": "sass -w ./src/styles/scss/index.scss ./src/styles/css/index.css"
+	  	"start": "remotion studio",
+	  	"build": "remotion render VideoAsso out/video.mp4",
+	  	"upgrade": "remotion upgrade",
+	  	"test": "eslint src --ext ts,tsx,js,jsx && tsc", 
+		"sass": "sass -w ./src/styles/scss/index.scss ./src/styles/css/index.css", 
+		"cut": "ffmpeg -i video.mp4 -ss 00:00:00 -t 00:00:17 -async 1 -strict -2 begin.mp4"
 	},
 	"repository": {},
 	"license": "UNLICENSED",

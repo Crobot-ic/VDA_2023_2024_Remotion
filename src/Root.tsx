@@ -3,8 +3,8 @@ import { useTimeConfig } from "remotion-time";
 import Main from "./Main";
 
 export const RemotionRoot: React.FC = () => {
-	const config = useTimeConfig("75s @ 30fps");
-	
+	const config = useTimeConfig("24s @ 30fps");
+
 	return (
 		<>
 			<Composition

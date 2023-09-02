@@ -3,6 +3,7 @@ import { Series } from "remotion";
 import { useTime } from "remotion-time";
 import GeneratingMode from "./Sequences/GeneratingMode/GenerateMode";
 import Accroche from "./Sequences/Accroche/Accroche";
+import ItsCrobo from "./Sequences/ItsCrobo/ItsCrobo";
 
 const Main: React.FC = () => {
 	const time = useTime();
@@ -10,7 +11,7 @@ const Main: React.FC = () => {
 	return (
 		<>
 			<Series>
-				{/* Créé avec du code */}
+				{/* Créé avec du code - 4s */}
 				<Series.Sequence 
 					durationInFrames={time`4s`}
 					name="Créé avec du code"
@@ -18,65 +19,57 @@ const Main: React.FC = () => {
 					<GeneratingMode />
 				</Series.Sequence>
 
-				{/* Accroche */}
+				{/* Accroche - 13s */}
 				<Series.Sequence 
-					durationInFrames={time`14s`}
+					durationInFrames={time`13s`}
 					name="Accroche"
 				>
 					<Accroche />
 				</Series.Sequence>
 
-				{/* Roulette - Crobot'ic c'est */}
+				{/* Crobot'ic c'est... - 3s */}
 				<Series.Sequence 
-					durationInFrames={time`5s`}
-					name="Roulette activités"
+					durationInFrames={time`3s`}
+					name="Crobot'ic c'est - First"
 				>
-					<></>
+					<ItsCrobo sequenceNumber={0} />
 				</Series.Sequence>
 
-				{/* Nos projets */}
+				{/* Nos événements - 1s */}
 				<Series.Sequence 
-					durationInFrames={time`25s`}
+					durationInFrames={time`1s`}
 					name="Nos projets"
 				>
 					<></>
 				</Series.Sequence>
 
-				{/* D'autres projets */}
+				{/* Roulette - Partie 2 : Des formations - 1s */}
 				<Series.Sequence 
-					durationInFrames={time`5s`}
-					name="D'autres projets"
-				>
-					<></>
-				</Series.Sequence>
-
-				{/* Roulette - Partie 2 : Des formations */}
-				<Series.Sequence 
-					durationInFrames={time`5s`}
+					durationInFrames={time`1s`}
 					name="Des formations - Roulette"
 				>
-					<></>
+					<ItsCrobo sequenceNumber={1} />
 				</Series.Sequence>
 
-				{/* Des formations */}
+				{/* Des formations - 1s */}
 				<Series.Sequence 
-					durationInFrames={time`5s`}
+					durationInFrames={time`1s`}
 					name="Roulette activités"
 				>
 					<></>
 				</Series.Sequence>
 
-				{/* Roulette - Partie 3 : Des événements */}
+				{/* Roulette - Partie 1 : Des projets - 1s */}
 				<Series.Sequence 
-					durationInFrames={time`5s`}
+					durationInFrames={time`1s`}
 					name="Des événements - Roulette"
 				>
-					<></>
+					<ItsCrobo sequenceNumber={2} />
 				</Series.Sequence>
 
-				{/* Des événements */}
+				{/* Des projets - 1s */}
 				<Series.Sequence 
-					durationInFrames={time`10s`}
+					durationInFrames={time`1s`}
 					name="Des événements"
 				>
 					<></>
