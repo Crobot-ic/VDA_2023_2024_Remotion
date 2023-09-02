@@ -4,6 +4,7 @@ import { useTime } from "remotion-time";
 import GeneratingMode from "./Sequences/GeneratingMode/GenerateMode";
 import Accroche from "./Sequences/Accroche/Accroche";
 import ItsCrobo from "./Sequences/ItsCrobo/ItsCrobo";
+import InfoAsso from "./Sequences/InfoAssociation/InfoAsso";
 
 const Main: React.FC = () => {
 	const time = useTime();
@@ -80,7 +81,7 @@ const Main: React.FC = () => {
 					durationInFrames={time`5s`}
 					name="Informations"
 				>
-					<></>
+					<InfoAsso />
 				</Series.Sequence>
 			</Series>
 		</>

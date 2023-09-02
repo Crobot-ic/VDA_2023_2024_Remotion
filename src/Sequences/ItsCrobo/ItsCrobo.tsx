@@ -13,8 +13,8 @@ const ItsCrobo: React.FC<Props> = ({ sequenceNumber }: Props) => {
 
     const pStyles: React.CSSProperties = {
         display: "flex", 
-        gap: 10, 
-        fontSize: 45, 
+        gap: 30, 
+        fontSize: "100px", 
         fontWeight: 600
     }, containerStyles: React.CSSProperties = {
         display: "flex", 
@@ -25,7 +25,7 @@ const ItsCrobo: React.FC<Props> = ({ sequenceNumber }: Props) => {
     }, animContainerStyles: React.CSSProperties = {
         display: "flex", 
         flexDirection: "column",
-        height: 45, 
+        height: 100, 
         overflow: "hidden"
     }, animContainerSpanStyles: React.CSSProperties = {
         transform: `translateY(${transformInterpolation}%)`
