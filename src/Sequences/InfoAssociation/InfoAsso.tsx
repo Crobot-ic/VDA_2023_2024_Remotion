@@ -40,7 +40,7 @@ const InfoAsso = () => {
                 <PromptingText 
                     duration="1s"
                     style={promptingStyles}
-                    text="Convaincus ? Rejoingnez-nous ! 😎"
+                    text="Convaincus ? Rejoignez-nous ! 😎"
                 />
             </p>
 
