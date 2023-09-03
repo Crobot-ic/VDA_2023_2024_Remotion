@@ -5,7 +5,7 @@
 	"scripts": {
 	  	"start": "remotion studio",
 	  	"build": "remotion render VideoAsso out/video.mp4",
-		"test": "remotion render Test out/test.mp4",
+		"testView": "remotion render Test out/test.mp4",
 	  	"upgrade": "remotion upgrade",
 	  	"test": "eslint src --ext ts,tsx,js,jsx && tsc", 
 		"sass": "sass -w ./src/styles/scss/index.scss ./src/styles/css/index.css", 

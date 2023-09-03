@@ -4,7 +4,7 @@ import Main from "./Main";
 import Test from './Test';
 
 export const RemotionRoot: React.FC = () => {
-	const config = useTimeConfig("28s @ 30fps");
+	const config = useTimeConfig("60s @ 30fps");
 	const testConfig = useTimeConfig("3s @ 30fps");
 
 	return (

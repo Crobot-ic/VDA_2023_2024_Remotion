@@ -24,7 +24,7 @@ const Accroche: React.FC = () => {
                 >
                     <VideoPart 
                         text="Ou de conquérir tes sagas préférées ? 😍" 
-                        videoFile="BubbleTea.mp4"
+                        videoFile="HarryPotter.mp4"
                     />
                 </Series.Sequence>
 
