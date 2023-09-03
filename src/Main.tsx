@@ -5,6 +5,7 @@ import GeneratingMode from "./Sequences/GeneratingMode/GenerateMode";
 import Accroche from "./Sequences/Accroche/Accroche";
 import ItsCrobo from "./Sequences/ItsCrobo/ItsCrobo";
 import InfoAsso from "./Sequences/InfoAssociation/InfoAsso";
+import Souvenirs from "./Sequences/Souvenirs/Souvenirs";
 
 const Main: React.FC = () => {
 	const time = useTime();
@@ -77,10 +78,10 @@ const Main: React.FC = () => {
 				</Series.Sequence>
 
 				<Series.Sequence
-					durationInFrames={time`3s`}
+					durationInFrames={time`5s`}
 					name="Des souvenirs"
 				>
-					<></>
+					<Souvenirs />
 				</Series.Sequence>
 
 				{/* Slide d'information - 3s */}

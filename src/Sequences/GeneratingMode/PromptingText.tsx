@@ -1,13 +1,13 @@
 import { interpolate, useCurrentFrame } from "remotion";
 import { useTime } from "remotion-time";
 
-type TypeOptions = {
+type Props = {
 	text: string;
 	style: React.CSSProperties; 
 	duration: string;
 };	
 
-function PromptingText ({ text, style, duration }: TypeOptions) {
+const PromptingText: React.FC<Props> = ({ text, style, duration }: Props) => {
 	const frame = useCurrentFrame();
 	const time = useTime();
 	const charsShown = interpolate(

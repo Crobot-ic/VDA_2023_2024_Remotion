@@ -3,3 +3,21 @@
     height: 350px;
     object-fit: contain;
 }
+
+.souvenir-img {
+    &-container {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        justify-content: center;
+    }
+    z-index: 15;
+    position: absolute;
+    bottom: 150px;
+    display: block;
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    border: 10px solid #111;
+    border-radius: 10px;
+}
