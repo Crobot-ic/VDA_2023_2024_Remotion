@@ -1,4 +1,4 @@
-// import { staticFile } from "remotion";
+import { Audio, staticFile } from "remotion";
 import { Series } from "remotion";
 import { useTime } from "remotion-time";
 import GeneratingMode from "./Sequences/GeneratingMode/GenerateMode";
@@ -9,9 +9,11 @@ import Souvenirs from "./Sequences/Souvenirs/Souvenirs";
 
 const Main: React.FC = () => {
 	const time = useTime();
+	const bgMusic = staticFile("bgCut.flac");
 
 	return (
 		<>
+			<Audio src={bgMusic} />
 			<Series>
 				{/* Créé avec du code - 4s */}
 				<Series.Sequence 
