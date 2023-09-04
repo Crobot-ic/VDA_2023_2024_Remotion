@@ -23,7 +23,7 @@ const Accroche: React.FC = () => {
                     name="Accroche - Bubble Tea"
                 >
                     <VideoPart 
-                        text="Ou de conquérir ton foie ? 🧋" 
+                        text="Ou de conquérir ton estomac ? 🧋" 
                         videoFile="BubbleTea.mp4"
                     />
                 </Series.Sequence>
