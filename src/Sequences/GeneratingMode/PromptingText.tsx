@@ -20,19 +20,17 @@ const PromptingText: React.FC<Props> = ({ text, style, duration }: Props) => {
 	const unvisibleText = text.slice(charsShown);
 	const cursorShown = textToShow.length === text.length ? Math.floor(frame / 10) % 2 === 1 : true;
 
+	const cursorStyles: React.CSSProperties = {
+		fontSize: '0.5em',
+		paddingLeft: '0.6em',
+		fontFamily: RobotoMono,
+		opacity: Number(cursorShown),
+	};
+
 	return (
 		<div style={style}>
 			<span>{textToShow}</span>
-      		<span
-        		style={{
-        		  	fontSize: '0.5em',
-        		  	paddingLeft: '0.6em',
-				  	fontFamily: RobotoMono,
-        		  	opacity: Number(cursorShown),
-        		}}
-      			>
-        			▃
-      		</span>
+      		<span style={cursorStyles}>▃</span>
       		<span style={{opacity: 0}}>{unvisibleText}</span>
 		</div>
 	)
