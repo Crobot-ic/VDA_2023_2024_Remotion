@@ -1,5 +1,6 @@
 import { AbsoluteFill, Easing, Img, staticFile } from "remotion";
 import { useInterpolate } from "remotion-time";
+import { RobotoMono } from "../../Common/Fonts";
 
 const Souvenirs = () => {
     const baseFolder = "Souvenirs/";
@@ -41,21 +42,21 @@ const Souvenirs = () => {
 
     const pStyles: React.CSSProperties = {
         display: "flex", 
-        gap: 30, 
-        fontSize: "100px", 
+        fontSize: 60, 
         fontWeight: 600, 
         position: "absolute", 
-        top: 0 
+        top: 0, 
+        fontFamily: RobotoMono
     }, containerStyles: React.CSSProperties = {
         display: "flex", 
-        backgroundColor: "#0e2a47", 
+        backgroundColor: "#424549", 
         alignItems: "center", 
         justifyContent: "center", 
         color: "white"
     }, animContainerStyles: React.CSSProperties = {
         display: "flex", 
         flexDirection: "column",
-        height: 100, 
+        height: 70, 
         overflow: "hidden"
     }, animContainerSpanStyles: React.CSSProperties = {
         transform: `translateY(${transformInterpolation}%)`
@@ -64,7 +65,7 @@ const Souvenirs = () => {
     return (
         <AbsoluteFill  style={containerStyles}>
             <p style={pStyles}>
-                Mais c'est aussi
+                Mais c'est aussi&nbsp;
                 <span style={animContainerStyles}>
                   <span style={animContainerSpanStyles}>des découvertes</span>
                   <span style={animContainerSpanStyles}>des souvenirs</span>

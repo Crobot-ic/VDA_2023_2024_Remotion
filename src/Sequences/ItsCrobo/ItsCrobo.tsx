@@ -2,6 +2,7 @@ import { AbsoluteFill } from "remotion";
 import '../../styles/css/index.css';
 import { useInterpolate } from "remotion-time";
 import getInterpolationValue from "./GetInterpolationValue";
+import { RobotoMono } from "../../Common/Fonts";
 
 type Props = {
     sequenceNumber: number;
@@ -13,19 +14,19 @@ const ItsCrobo: React.FC<Props> = ({ sequenceNumber }: Props) => {
 
     const pStyles: React.CSSProperties = {
         display: "flex", 
-        gap: 30, 
-        fontSize: "100px", 
-        fontWeight: 600
+        fontSize: 100, 
+        fontWeight: 600,
+        fontFamily: RobotoMono,
     }, containerStyles: React.CSSProperties = {
         display: "flex", 
-        backgroundColor: "#0e2a47", 
+        backgroundColor: "#424549", 
         alignItems: "center", 
         justifyContent: "center", 
         color: "white"
     }, animContainerStyles: React.CSSProperties = {
         display: "flex", 
         flexDirection: "column",
-        height: 100, 
+        height: 120, 
         overflow: "hidden"
     }, animContainerSpanStyles: React.CSSProperties = {
         transform: `translateY(${transformInterpolation}%)`
@@ -34,7 +35,7 @@ const ItsCrobo: React.FC<Props> = ({ sequenceNumber }: Props) => {
     return (
         <AbsoluteFill  style={containerStyles}>
             <p style={pStyles}>
-                Crobot'ic, c'est
+                Crobot'ic, c'est&nbsp;
                 <span style={animContainerStyles}>
                   <span style={animContainerSpanStyles}>des projets</span>
                   <span style={animContainerSpanStyles}>des formations</span>

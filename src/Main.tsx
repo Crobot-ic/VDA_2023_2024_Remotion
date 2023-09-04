@@ -26,7 +26,7 @@ const Main: React.FC = () => {
 					<GeneratingMode />
 				</Series.Sequence>
 
-				{/* Accroche - 13s */}
+				{/* Accroche - 18s */}
 				<Series.Sequence 
 					durationInFrames={time`18s`}
 					name="Accroche"
@@ -42,10 +42,10 @@ const Main: React.FC = () => {
 					<ItsCrobo sequenceNumber={0} />
 				</Series.Sequence>
 
-				{/* Nos événements - 1s */}
+				{/* Nos événements - 5s */}
 				<Series.Sequence 
-					durationInFrames={time`1s`}
-					name="Nos projets"
+					durationInFrames={time`5s`}
+					name="Nos événements"
 				>
 					<Events />
 				</Series.Sequence>
@@ -58,15 +58,15 @@ const Main: React.FC = () => {
 					<ItsCrobo sequenceNumber={1} />
 				</Series.Sequence>
 
-				{/* Des formations - 1s */}
+				{/* Des formations - 10s */}
 				<Series.Sequence 
-					durationInFrames={time`1s`}
-					name="Roulette activités"
+					durationInFrames={time`10s`}
+					name="Des formations"
 				>
 					<Trainings />
 				</Series.Sequence>
 
-				{/* Roulette - Partie 1 : Des projets - 15s */}
+				{/* Roulette - Partie 1 : Des projets - 1s */}
 				<Series.Sequence 
 					durationInFrames={time`1s`}
 					name="Des projets - Roulette"
@@ -82,6 +82,7 @@ const Main: React.FC = () => {
 					<Projects />
 				</Series.Sequence>
 
+				{/* Des souvenirs - 5s */}
 				<Series.Sequence
 					durationInFrames={time`5s`}
 					name="Des souvenirs"

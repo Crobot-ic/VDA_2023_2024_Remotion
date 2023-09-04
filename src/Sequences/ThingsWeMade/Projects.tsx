@@ -9,7 +9,7 @@ const Projects: React.FC = () => {
         <Series>
             <Series.Sequence durationInFrames={time`5s`}>
                 <Thing 
-                    description="Partenariat avec Efrei Falcon : Création d'un circuit pour des courses de drone ! 🐦"
+                    description="Création d'un circuit pour des courses de drone ! 🐦"
                     file="Drone.mp4"
                     name="Projet Falcon"
                 />
@@ -25,7 +25,7 @@ const Projects: React.FC = () => {
 
             <Series.Sequence durationInFrames={time`5s`}>
                 <Thing 
-                    description="Vous aussi vous aimez bien les bubble tea ? Venez nous aider à réaliser une machine pour les automatiser ! 🧋"
+                    description="Franchement, qui n'aime pas les bubble tea ? 🧋"
                     file="BubbleTea.mp4"
                     name="Machine à bubble tea"
                 />

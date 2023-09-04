@@ -2,6 +2,7 @@ import { AbsoluteFill, Img, staticFile } from "remotion";
 import PromptingText from "../GeneratingMode/PromptingText";
 import "../../styles/css/index.css";
 import { useInterpolate } from "remotion-time";
+import { RobotoMono } from "../../Common/Fonts";
 
 const InfoAsso = () => {
     const qrCode = staticFile("QRCode.png");
@@ -14,6 +15,7 @@ const InfoAsso = () => {
     const promptingStyles: React.CSSProperties = {
         color: "white", 
         fontSize: 70,
+        fontFamily: RobotoMono,
         position: "absolute",
         top: 75,
         left: "50%", 
@@ -35,7 +37,7 @@ const InfoAsso = () => {
     };
 
     return (
-        <AbsoluteFill style={{ backgroundColor: "#0e2a47" }}>
+        <AbsoluteFill style={{ backgroundColor: "#424549" }}>
             <p>
                 <PromptingText 
                     duration="1s"

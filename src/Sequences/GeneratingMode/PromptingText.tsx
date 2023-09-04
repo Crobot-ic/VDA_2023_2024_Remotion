@@ -1,5 +1,6 @@
 import { interpolate, useCurrentFrame } from "remotion";
 import { useTime } from "remotion-time";
+import { RobotoMono } from "../../Common/Fonts";
 
 type Props = {
 	text: string;
@@ -24,9 +25,10 @@ const PromptingText: React.FC<Props> = ({ text, style, duration }: Props) => {
 			<span>{textToShow}</span>
       		<span
         		style={{
-        		  fontSize: '0.5em',
-        		  paddingLeft: '0.6em',
-        		  opacity: Number(cursorShown),
+        		  	fontSize: '0.5em',
+        		  	paddingLeft: '0.6em',
+				  	fontFamily: RobotoMono,
+        		  	opacity: Number(cursorShown),
         		}}
       			>
         			▃

@@ -1,6 +1,7 @@
 import { AbsoluteFill, Video, staticFile } from "remotion";
 import "../../styles/css/index.css";
 import PromptingText from "../GeneratingMode/PromptingText";
+import { RobotoMono } from "../../Common/Fonts";
 
 type Props = {
     videoFile: string;
@@ -16,7 +17,8 @@ const VideoPart : React.FC<Props> = ({ videoFile, text }: Props) => {
         maxWidth: "80vw",
         padding: "10px 75px",
         fontSize: "3rem", 
-        backgroundColor: "#0e2a47", 
+        fontFamily: RobotoMono,
+        backgroundColor: "#424549", 
         color: "white", 
     }
 
